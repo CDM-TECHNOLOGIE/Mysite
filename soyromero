@@ -1,0 +1,842 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>🔥SOY ROMERO 400K🔥</title>
+
+<style>
+
+/* BACKGROUND */
+body{
+margin:0;
+font-family:Arial;
+background:url('https://i.ibb.co/S4bjk7Kt/uwp3850633.jpg') center/cover fixed;
+color:white;
+}
+
+/* ANIMATION */
+@keyframes fadeIn {
+  from {opacity:0; transform:scale(1.1);}
+  to {opacity:1; transform:scale(1);}
+}
+
+@keyframes pulse {
+  0% {transform:scale(1);}
+  50% {transform:scale(1.05);}
+  100% {transform:scale(1);}
+}
+
+/* INTRO FULL SCREEN */
+#intro{
+position:fixed;
+top:0;
+left:0;
+width:100%;
+height:100%;
+background:rgba(0,0,0,0.95);
+display:flex;
+justify-content:center;
+align-items:center;
+z-index:9999;
+}
+
+/* 🔥 BOX PRINCIPAL */
+#intro .box{
+background:rgba(0,0,0,0.85);
+border:2px solid red;
+box-shadow:0 0 20px red;
+border-radius:50px;
+padding:2px;
+max-width:420px;
+text-align:center;
+animation: fadeIn 1s ease-in-out;
+color:white;
+}
+
+/* TEXT */
+#intro h2{
+font-size:15px;
+line-height:1.6;
+margin-bottom:15px;
+}
+
+#intro .info{
+margin-top:15px;
+font-size:13px;
+line-height:1.8;
+display:flex;
+flex-direction:column;
+align-items:center;
+}
+
+#intro h3{
+margin-bottom:10px;
+}
+
+/* SKIP BUTTON */
+#intro button{
+margin-top:15px;
+padding:6px 14px;
+background:red;
+color:white;
+border:none;
+border-radius:6px;
+font-size:12px;
+cursor:pointer;
+animation: pulse 1.5s infinite;
+transition:0.3s;
+}
+
+#intro button:hover{
+transform:scale(1.05);
+}
+
+</style>
+</head>
+
+<body>
+
+<!-- INTRO -->
+<div id="intro">
+
+  <div class="box">
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<title>Intro Site</title>
+
+<style>
+.intro{
+    text-align:center;
+    padding:40px;
+}
+
+.image-box{
+    width:300px;
+    height:200px;
+    margin:0 auto;
+    border:3px solid #000;
+    overflow:hidden;
+    border-radius:10px;
+    position:relative;
+}
+
+/* kouch nwa pou fè tèks la parèt byen */
+.image-box::before{
+    content:"";
+    position:absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    background:rgba(0,0,0,0.4);
+    z-index:1;
+}
+
+.image-box img{
+    width:100%;
+    height:100%;
+    object-fit:cover;
+    display:block;
+}
+
+/* tèks toujou parèt anlè */
+.content{
+    position:relative;
+    z-index:2;
+    margin-top:20px;
+    color:white;
+}
+</style>
+
+</head>
+<body>
+
+<section class="intro">
+
+    <div class="image-box">
+        <img src="https://i.ibb.co/mVXZCT2Z/16c632206820af45a01b2e43cad1d7a8.jpg">
+    </div>
+
+
+</section>
+
+</body>
+</html>
+    <h2>
+    ✅𝐌𝐞𝐫𝐜𝐢 𝐩𝐚𝐫𝐜𝐞 𝐪𝐮𝐞 𝐯𝐨𝐮𝐬 𝐚𝐯𝐞𝐳 𝐜𝐡𝐨𝐢𝐬𝐢 𝐦𝐨𝐧 𝐬𝐢𝐭𝐞 𝐩𝐨𝐮𝐫 𝐚𝐜𝐡𝐞𝐭𝐞𝐫 𝐝𝐞𝐬 𝐃𝐢𝐚𝐦𝐞𝐧𝐭 ♻️<br><br>
+
+    𝐉𝐞 𝐬𝐮𝐢𝐬 𝐮𝐧 𝐢𝐧𝐟𝐥𝐮𝐞𝐧𝐜𝐫 𝐡𝐚ï𝐭𝐢𝐞𝐧 𝐣𝐞 𝐯𝐞𝐮𝐱 𝐭𝐫𝐚𝐯𝐚𝐢𝐥𝐥𝐞𝐫 𝐩𝐨𝐮𝐫 𝐦𝐚 𝐜𝐨𝐦𝐦𝐮𝐧au𝐭é 💎<br><br>
+
+    ➡🆕𝐀𝐛𝐨nn𝐞𝐫 𝐚𝐯𝐞𝐜 𝐦𝐨𝐧 𝐜𝐨𝐦𝐩𝐭e 𝐭𝐢𝐤𝐭𝐨𝐤 𝐚𝐯𝐚𝐧t 𝐝𝐞 𝐜𝐨𝐧𝐭𝐢𝐧𝐮𝐞𝐫
+    𝐬𝐢 𝐭𝐮 𝐥'𝐚𝐬 déjà 𝐟𝐚𝐢𝐭, partager le lien avec 5 personne ou 5 groupe et après passer🔄
+    </h2>
+
+<a href="https://www.tiktok.com/@soyromero01" target="_blank">
+    <button>
+        🎵 𝐓𝐢𝐤𝐓𝐨𝐤
+    </button>
+</a>
+
+<button id="whatsappBtn">Partager le lien via Whatsapp</button>
+
+<script>
+document.getElementById("whatsappBtn").onclick = function(){
+
+// mesaj ou vle voye a
+let message = encodeURIComponent(
+"Utiliser la site de Romero chef bratva pour acheter des Diamants et des Compte à bas prix : https://exanple.com\n\nMerci pour votre Confiance mes fans 🔰"
+);
+
+// eseye ouvri WhatsApp ak mesaj la
+window.location.href = "https://wa.me/?text=" + message;
+
+// si pa mache, ale app WhatsApp / Play Store
+setTimeout(() => {
+window.location.href = "https://play.google.com/store/apps/details?id=com.whatsapp";
+}, 1500);
+
+};
+</script>
+<style>
+#whatsappBtn{
+padding:6px 14px !important;
+background:#25D366 !important;  /* fòse vèt */
+color:#fff !important;
+border-radius:6px !important;
+border:none !important;
+font-size:12px !important;
+cursor:pointer;
+box-shadow:0 0 12px rgba(37,211,102,0.7) !important;
+transition:0.3s !important;
+}
+
+/* hover */
+#whatsappBtn:hover{
+transform:scale(1.05) !important;
+box-shadow:0 0 25px rgba(37,211,102,1) !important;
+}
+</style>
+
+    <div class="info">
+
+        <h3>🔰𝐂𝐨𝐦𝐦𝐞𝐧𝐭 𝐚𝐜𝐡𝐞𝐭𝐞𝐫 𝐝𝐞𝐬 𝐝𝐢𝐚𝐦𝐞𝐧𝐭s🔰 :</h3>
+ Choisir la quantité de diament a récharger et après
+ ajouter le pseudo / nom de votre compte free fire 
+️   ajouter Uid de votre compte freefire et après
+Fait la transaction de paiement depuis votre télephone ou bureau Natcash et puis fait la capture d'ecran si 
+  c'est dans une bureau demande au agent de prendre
+  laphoto de paeiment et après retourne sur la page 
+  choisit selectionner un fichier et après choisis la
+  photo que tu as pris et après cliquer Envoyer Commende.
+
+    <button onclick="skipIntro()">𝐏𝐚𝐬𝐬𝐞𝐫</button>
+
+<br><br>
+
+
+
+
+
+    </div>
+
+  </div>
+
+</div>
+
+<!-- MAIN CONTENT -->
+<h1 style="text-align:center;margin-top:50px;">
+
+</h1>
+
+<!-- SCRIPT -->
+<script>
+function skipIntro(){
+document.getElementById("intro").style.display = "none";
+}
+</script>
+
+</body>
+</html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<div style="text-align:center; margin-top:10px;">
+  <img src="https://i.ibb.co/8D75HXkv/Screenshot-2026-06-10-16-53-26-75-50ef9f5a0f3fc24b6f0ffc8843167fe4.jpg"
+       alt="Profil"
+       style="width:120px;height:120px;border-radius:50%;object-fit:cover;border:3px solid red;box-shadow:0 0 15px red;">
+</div>
+  <title>🔥SOY ROMERO 400K🔥</title>
+
+<style>
+body{
+margin:0;
+font-family:Arial;
+background:url('https://i.ibb.co/S4bjk7Kt/uwp3850633.jpg') center/cover fixed;
+color:white;
+}
+
+.overlay{
+background:rgba(0,0,0,0.78);
+min-height:100vh;
+padding:20px;
+}
+
+h1{
+text-align:center;
+color:#ff2b2b;
+text-shadow:0 0 15px red;
+}
+
+.container{
+max-width:1000px;
+margin:auto;
+}
+
+.section{
+background:rgba(0,0,0,0.6);
+padding:20px;
+border-radius:12px;
+margin-top:20px;
+}
+
+.cards{
+display:flex;
+flex-wrap:wrap;
+gap:10px;
+justify-content:center;
+}
+
+.card{
+width:220px;
+background:rgba(255,255,255,0.08);
+border:1px solid #4da6ff;
+padding:12px;
+border-radius:12px;
+text-align:center;
+transition:0.3s;
+}
+
+.card:hover{
+transform:scale(1.05);
+box-shadow:0 0 15px red;
+}
+
+button{
+background:red;
+color:white;
+border:none;
+padding:10px;
+width:100%;
+border-radius:8px;
+cursor:pointer;
+margin-top:10px;
+}
+
+input,select{
+width:100%;
+padding:10px;
+margin-top:10px;
+border:none;
+border-radius:8px;
+}
+
+.whatsapp{
+display:block;
+text-align:center;
+background:green;
+color:white;
+padding:12px;
+border-radius:8px;
+text-decoration:none;
+margin-top:10px;
+}
+</style>
+</head>
+
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<title>Menu Pro</title>
+
+<style>
+body{
+margin:0;
+font-family:Arial;
+background:url('https://i.ibb.co/pBXhSRH4/a5399e516e6357829dcc03ab9c1f068e.jpg') center/cover fixed;
+color:white;
+}
+
+/* ☰ ICON */
+#menuIcon{
+position:fixed;
+top:15px;
+left:15px;
+font-size:30px;
+cursor:pointer;
+z-index:1001;
+}
+
+/* OVERLAY */
+#overlay{
+position:fixed;
+top:0;
+left:0;
+width:100%;
+height:100%;
+background:rgba(0,0,0,0.5);
+opacity:0;
+visibility:hidden;
+transition:0.3s;
+z-index:998;
+}
+
+/* MENU */
+#sideMenu{
+position:fixed;
+top:0;
+left:0;
+width:250px;
+height:100%;
+background:#000;
+border-right:2px solid #ff0000;
+padding:20px;
+
+transform:translateX(-100%);
+transition:0.3s ease;
+z-index:999;
+}
+
+/* ACTIVE STATE */
+#sideMenu.active{
+transform:translateX(0);
+}
+
+#overlay.active{
+opacity:1;
+visibility:visible;
+}
+
+/* TIT */
+#sideMenu h3{
+color:#ff0000;
+}
+
+/* BUTTONS */
+#sideMenu button{
+width:10%;
+margin-top:10px;
+padding:10px;
+background:#111;
+color:white;
+border:1px solid #ff0000;
+border-radius:8px;
+cursor:pointer;
+}
+
+/* MESSAGE BOX */
+#messageBox{
+margin-top:15px;
+padding:10px;
+background:#111;
+border:1px solid #ff0000;
+border-radius:8px;
+font-size:13px;
+white-space:pre-line;
+min-height:70px;
+}
+</style>
+</head>
+
+<body>
+
+<!-- ☰ -->
+<div id="menuIcon" onclick="toggleMenu()">☰</div>
+
+<!-- OVERLAY -->
+<div id="overlay" onclick="toggleMenu()"></div>
+
+<!-- MENU -->
+<div id="sideMenu">
+  <h3>Paramètres</h3>
+
+  <button onclick="showService()">Service et confidentialité</button>
+  <button onclick="showAbout()">À propos du site</button>
+  <button onclick="resetUrl()">Reset URL</button>
+
+  <div id="messageBox">Sélectionnez une option</div>
+</div>
+
+<script>
+let menu = document.getElementById("sideMenu");
+let overlay = document.getElementById("overlay");
+let msgBox = document.getElementById("messageBox");
+
+let isOpen = false;
+
+/* TOGGLE MENU */
+function toggleMenu(){
+isOpen = !isOpen;
+
+menu.classList.toggle("active", isOpen);
+overlay.classList.toggle("active", isOpen);
+}
+
+/* SERVICE */
+function showService(){
+msgBox.innerText =
+"Service et confidentialité:\n\n" +
+"Ce site propose des diamants et des compte free fire à bas prix.\n" +
+"Transactions rapides et sécurisées.\n" +
+"Aucune donnée personnelle n'est utilisée sans consentement.";
+}
+
+/* ABOUT */
+function showAbout(){
+msgBox.innerText =
+"À propos du site:\n\n" +
+"1. Romero est un influenceur haïtien.\n" +
+"2. Actif dans Free Fire.\n" +
+"3. Site créé pour ses fans.\n" +
+"4. Vente de diamants à bas prix et Compte Free fire.\n" +
+"5. Interface simple et rapide.\n" +
+"6. Pour joueurs mobiles.\n" +
+"7. Romero inspire les jeunes.\n" +
+"8. Contenu gaming.\n" +
+"9. Améliorations continues.\n" +
+"10. Merci pour votre confiance.";
+}
+
+/* RESET */
+function resetUrl(){
+window.location.href = window.location.origin;
+}
+</script>
+
+</body>
+</html>
+
+<body>
+
+<div class="overlay">
+<div class="container">
+
+<h1>🔥SOY ROMERO 400K🔥</h1>
+<p style="text-align:center;">Rapide • Sécurisé • Fiable</p>
+
+<!-- PACKS -->
+<div class="section">
+<h2 style="text-align:center;">💎Packs Diamonds💎</h2>
+
+<div class="cards">
+
+<div class="card">310 Diamonds<br>325 HTG<button onclick="selectPlan('310 Diamonds - 325 HTG')">Choisir</button></div>
+<div class="card">450 Diamonds<br>455 HTG<button onclick="selectPlan('450 Diamonds - 455 HTG')">Choisir</button></div>
+<div class="card">572 Diamonds<br>610 HTG<button onclick="selectPlan('572 Diamonds - 610 HTG')">Choisir</button></div>
+<div class="card">680 Diamonds<br>700 HTG<button onclick="selectPlan('680 Diamonds - 700 HTG')">Choisir</button></div>
+<div class="card">880 Diamonds<br>955 HTG<button onclick="selectPlan('880 Diamonds - 955 HTG')">Choisir</button></div>
+<div class="card">1060 +100<br>1000 HTG<button onclick="selectPlan('1060 +100 - 1155 HTG')">Choisir</button></div>
+<div class="card">1320 + 100 Diamonds<br>1125 HTG<button onclick="selectPlan('1330 + 100 Diamonds - 1125 HTG')">Choisir</button></div>
+<div class="card">1580 + 100 Diamonds<br>1700 HTG<button onclick="selectPlan('1580 + 100 Diamonds - 1700 HTG')">Choisir</button></div>
+<div class="card">1890 + 100 Diamonds<br>1920 HTG<button onclick="selectPlan('1890 + 100 Diamonds - 1920 HTG')">Choisir</button></div>
+<div class="card">2000 + 400 Diamonds<br>2600 HTG<button onclick="selectPlan('2000 + 400 Diamonds - 2600 HTG')">Choisir</button></div>
+<div class="card">3000+ 500 Diamonds<br>3700 HTG<button onclick="selectPlan('3000 + 500 Diamonds - 3700 HTG')">Choisir</button></div>
+<div class="card">4000 + 800 Diamonds<br>5155 HTG<button onclick="selectPlan('4000 + 800 Diamonds - 5155 HTG')">Choisir</button></div>
+<div class="card">5000 + 1100 Diamonds<br>6900 HTG<button onclick="selectPlan('5000 + 1100 Diamonds - 6900 HTG')">Choisir</button></div>
+
+
+</div>
+</div>
+
+<!-- ABO -->
+<div class="section">
+<h2 style="text-align:center;">🔥 Abonnements🔥</h2>
+
+<div class="cards">
+
+<div class="card">Semaine<br>225 HTG<button onclick="selectPlan('Abo Semaine - 225 HTG')">Choisir</button></div>
+<div class="card">Mois<br>1000 HTG<button onclick="selectPlan('Abo Mois - 1000 HTG')">Choisir</button></div>
+<div class="card">VIP<br>1100 HTG<button onclick="selectPlan('Abo VIP - 1100 HTG')">Choisir</button></div>
+
+</div>
+</div>
+
+<div class="section">
+<h2 style="text-align:center;">🔰Compte Free fire🔰</h2>
+<style>
+.card{
+  width:250px;
+  background:#222;
+  padding:12px;
+  border-radius:10px;
+  text-align:center;
+  color:white;
+
+  margin: 50px auto; /* SA KI FÈ LI NAN MITAN */
+}
+</style>
+<div class="card">
+
+  <img src="https://i.ibb.co/Sw049h1z/IMG-20260207-WA0169-1.jpg"
+  style="width:250px; border-radius:10px;">
+
+  <div style="margin:10px 0;">Compte Vendue</div>
+
+  <button onclick="selectPlan('Free Fire Account Compte Vendue')">
+    Vendue✅
+  </button>
+
+  <button onclick="alert('Ce compte n\'est plus disponible ✅')">
+    Informations débloquer 🔓
+  </button>
+
+</div>
+
+
+<div class="card">
+
+  <img src="https://i.ibb.co/3YmFn8Rv/IMG-20260121-WA0074-1.jpg"
+  style="width:250px; border-radius:10px;">
+
+  <div style="margin:10px 0;">16000 HTG</div>
+
+  <button onclick="selectPlan('Free Fire Account - 16000 HTG')">
+    Choisir
+  </button>
+  </button>
+  <button onclick="alert('Payer pour débloquer les informations 👇🏽')">
+    Informations bloqué 🔒
+  </button>
+
+</div>
+
+
+<div class="card">
+
+  <img src="https://i.ibb.co/WWz2JKWD/WA-1781115514904.jpg"
+  style="width:250px; border-radius:10px;">
+
+  <div style="margin:10px 0;">10000 HTG</div>
+
+  <button onclick="selectPlan('Free Fire Account - 10000 HTG')">
+    Choisir
+  </button>
+  </button>
+  <button onclick="alert('Payer pour débloquer les informations 👇🏽')">
+    Informations bloqué 🔒
+  </button>
+
+</div>
+
+
+<div class="card">
+
+  <img src="https://i.ibb.co/3YNDR1tX/WA-1781115509608.jpg"
+  style="width:250px; border-radius:10px;">
+
+  <div style="margin:10px 0;">9000 HTG</div>
+
+  <button onclick="selectPlan('Free Fire Account - 9000 HTG')">
+    Choisir
+  </button>
+  </button>
+  <button onclick="alert('Payer pour débloquer les informations 👇🏽')">
+    Informations bloqué 🔒
+  </button>
+
+</div>
+
+
+<div class="card">
+
+  <img src="https://i.ibb.co/GvhkRCXJ/IMG-20260615-WA0052.jpg"
+  style="width:250px; border-radius:10px;">
+
+  <div style="margin:10px 0;">1000 HTG</div>
+
+  <button onclick="selectPlan('Free Fire Account - 1000 HTG')">
+    Choisir
+  </button>
+  </button>
+  <button onclick="alert('Payer pour débloquer les informations 👇🏽')">
+    Informations bloqué 🔒
+  </button>
+
+</div>
+
+<div class="card">
+
+  <img src="https://i.ibb.co/HpxRZsnt/WA-1781115278362.jpg"
+  style="width:250px; border-radius:10px;">
+
+  <div style="margin:10px 0;">6000 HTG</div>
+
+  <button onclick="selectPlan('Free Fire Account - 6000 HTG')">
+    Choisir
+  </button>
+  </button>
+  <button onclick="alert('Payer pour débloquer les informations 👇🏽')">
+    Informations bloqué 🔒
+  </button>
+
+</div>
+
+
+<div class="card">
+
+  <img src="https://i.ibb.co/Dfb50RGw/WA-1781115507441.jpg"
+  style="width:250px; border-radius:10px;">
+
+  <div style="margin:10px 0;">5500 HTG</div>
+
+  <button onclick="selectPlan('Free Fire Account - 5500 HTG')">
+    Choisir
+  </button>
+  </button>
+  <button onclick="alert('Payer pour débloquer les informations 👇🏽')">
+    Informations bloqué 🔒
+  </button>
+
+</div>
+
+<div class="card">
+
+  <img src="https://i.ibb.co/hFzP4vSD/IMG-20260211-WA0193.jpg"
+  style="width:250px; border-radius:10px;">
+
+  <div style="margin:10px 0;">15000 HTG</div>
+
+  <button onclick="selectPlan('Free Fire Account - 15000 HTG')">
+    Choisir
+  </button>
+  </button>
+  <button onclick="alert('Payer pour débloquer les informations 👇🏽')">
+    Informations bloqué 🔒
+  </button>
+
+</div>
+
+<div class="card">
+
+  <img src="https://i.ibb.co/Sw049h1z/IMG-20260207-WA0169-1.jpg"
+  style="width:250px; border-radius:10px;">
+
+  <div style="margin:10px 0;">Compte Vendue</div>
+
+  <button onclick="selectPlan('Free Fire Account Compte Vendue')">
+    Vendue✅
+  </button>
+
+  <button onclick="alert('Ce compte n\'est plus disponible ✅')">
+    Informations débloquer 🔓
+  </button>
+
+</div>
+
+<!-- 💎COMMANDE DE VALIDATION💎 -->
+<div class="section">
+<h2>📩 Commande</h2>
+
+<input id="account" placeholder="Nom du compte Free Fire">
+<input id="uid" placeholder="ID Free Fire">
+<input id="plan" placeholder="Plan choisi" readonly>
+
+<select id="pay">
+<option>NatCash</option>
+<input type="file" id="proof" accept="image/*">
+
+<button onclick="send(event)">Envoyer Commande</button>
+
+<script>
+function send(event){
+
+let file = document.getElementById("proof");
+let btn = event.target;
+
+if(file.files.length === 0){
+alert("Vous devez ajouter la preuve");
+return;
+}
+
+btn.innerText = "Vérifié";
+btn.disabled = true;
+}
+</script>
+
+<!-- bouton ou yo -->
+<button onclick="sendEmail()">✔ VALIDER VOTRE COMMANDE</button>
+
+<!-- SCRIPT YO -->
+<script>
+
+function selectPlan(plan){
+document.getElementById("plan").value = plan;
+}
+
+function sendEmail(){
+
+alert("❌ Vérification échoué choisis une vrai preuve");
+
+}
+
+</script>
+
+</body>
+</html>
+</body>
+
+</div>
+
+<!-- PAIEMENT -->
+<div class="section">
+<h2>💳 Moyens de paiement</h2>
+<p>Vous devez finaliser votre Commende avec la preuve du Paiement,  voici les enformations au dessous, Merci.</p>
+<p>NatCash : 509XXXXXXXX</p>
+<p>Nat Name: Unknow anelson </p>
+<p>Si vous rencontré des problemes avec mon site </p>
+<p>💬 Contacter: support, romerochefbratva@gmail.com pour expliquer votre problemes, Merci.</p>
+<button onclick="window.open('https://mail.google.com/mail/?view=cm&fs=1&to=romerochefbratva@gmail.com','_blank')">
+    @Support
+</button>
+
+<br><br>
+
+</div>
+
+</div>
+</div>
+
+<script>
+
+function selectPlan(plan){
+document.getElementById("plan").value = plan;
+}
+
+function send(){
+
+let account = document.getElementById("account").value;
+let uid = document.getElementById("uid").value;
+let plan = document.getElementById("plan").value;
+let pay = document.getElementById("pay").value;
+
+if(!account || !uid || !plan){
+alert("Remplis tout!");
+return;
+}
+
+let msg =
+"🔥SOY ROMERO 300K🔥%0A%0A" +
+"Nom du compte: " + account + "%0A" +
+"ID Free Fire: " + uid + "%0A" +
+"Plan: " + plan + "%0A" +
+"Paiement: " + pay + "%0A%0A" +
+"📸 Preuve: envoyée sur WhatsApp";
+
+</script>
+
+</body>
+</html>
