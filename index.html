@@ -1,0 +1,782 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>SOY ROMERO • Diamants & Comptes Free Fire</title>
+<style>
+  :root{
+    --bg: #0A0A0A;
+    --bg-soft: #131313;
+    --panel: #181818;
+    --line: #2A2A2A;
+    --text: #F4F1EF;
+    --muted: #9A9A9A;
+    --flame: #E0102A;
+    --flame-soft: #FF2E45;
+    --cyan: #FF2E45;
+    --gold: #FF5C42;
+    --green: #2ED573;
+  }
+
+  *{box-sizing:border-box;}
+  html{scroll-behavior:smooth;}
+
+  body{
+    margin:0;
+    background:
+      linear-gradient(180deg, rgba(10,10,10,0.88), rgba(10,10,10,0.95)),
+      url('https://i.ibb.co/dw77JFm0/0ae2784359e2ca500788f3545ce9ba3b.jpg') center/cover fixed;
+    color:var(--text);
+    font-family:'Inter', system-ui, -apple-system, sans-serif;
+    -webkit-font-smoothing:antialiased;
+  }
+
+  @media (prefers-reduced-motion: reduce){
+    *{animation-duration:0.01ms !important; transition-duration:0.01ms !important;}
+  }
+
+  h1,h2,h3{
+    font-family:'Rajdhani', sans-serif;
+    margin:0;
+    letter-spacing:0.02em;
+  }
+
+  a{color:inherit; text-decoration:none;}
+  button{font-family:inherit;}
+
+  /* ===== INTRO ===== */
+  #intro{
+    position:fixed; inset:0; z-index:9999;
+    background:radial-gradient(120% 120% at 50% 0%, #1A1020 0%, #0B0E14 60%);
+    display:flex; align-items:center; justify-content:center;
+    padding:24px;
+    animation:fadeBg 0.6s ease;
+  }
+  @keyframes fadeBg{from{opacity:0;} to{opacity:1;}}
+
+  .intro-card{
+    max-width:420px; width:100%;
+    background:linear-gradient(180deg, var(--panel), var(--bg-soft));
+    border:1px solid var(--line);
+    border-radius:20px;
+    padding:28px 24px 24px;
+    text-align:center;
+    box-shadow:0 0 0 1px rgba(255,77,46,0.15), 0 20px 60px -20px rgba(255,77,46,0.35);
+    animation:riseIn 0.6s cubic-bezier(.2,.9,.2,1) both;
+  }
+  @keyframes riseIn{
+    from{opacity:0; transform:translateY(24px) scale(0.97);}
+    to{opacity:1; transform:translateY(0) scale(1);}
+  }
+
+  .intro-avatar{
+    width:84px; height:84px; border-radius:50%;
+    object-fit:cover; margin:0 auto 14px;
+    border:2px solid var(--flame);
+    box-shadow:0 0 24px rgba(255,77,46,0.5);
+  }
+
+  .intro-card .eyebrow{
+    color:var(--flame-soft); font-size:12px; font-weight:700;
+    letter-spacing:0.18em; text-transform:uppercase; margin-bottom:6px;
+  }
+
+  .intro-card h2{font-size:20px; color:var(--text); margin-bottom:10px;}
+  .intro-card p{color:var(--muted); font-size:14px; line-height:1.6; margin:0 0 16px;}
+
+  .intro-actions{display:flex; flex-direction:column; gap:10px;}
+
+  .btn{
+    display:inline-flex; align-items:center; justify-content:center; gap:8px;
+    border:none; border-radius:12px; padding:13px 18px;
+    font-weight:700; font-size:14px; cursor:pointer;
+    transition:transform 0.15s ease, box-shadow 0.15s ease, filter 0.15s ease;
+  }
+  .btn:active{transform:scale(0.97);}
+
+  .btn-tiktok{
+    background:linear-gradient(135deg,#25F4EE,#FE2C55);
+    color:#0B0E14;
+  }
+  .btn-tiktok:hover{filter:brightness(1.08);}
+
+  .btn-whatsapp{
+    background:var(--green); color:#062012;
+  }
+  .btn-whatsapp:hover{filter:brightness(1.08);}
+
+  .intro-steps{
+    text-align:left; margin-top:18px; padding-top:16px;
+    border-top:1px dashed var(--line);
+  }
+  .intro-steps h3{font-size:13px; color:var(--cyan); margin-bottom:10px; text-transform:uppercase; letter-spacing:0.08em;}
+  .intro-steps ol{margin:0; padding-left:20px; color:var(--muted); font-size:13px; line-height:1.7;}
+  .intro-steps li::marker{color:var(--flame-soft); font-weight:700;}
+
+  .skip{
+    margin-top:18px; width:100%;
+    background:transparent; color:var(--muted);
+    border:1px solid var(--line); border-radius:12px;
+    padding:11px; font-size:13px; font-weight:600;
+  }
+  .skip:hover{color:var(--text); border-color:var(--flame);}
+
+  /* ===== HEADER ===== */
+  header{
+    position:sticky; top:0; z-index:100;
+    background:rgba(11,14,20,0.85);
+    backdrop-filter:blur(10px);
+    border-bottom:1px solid var(--line);
+  }
+  .nav{
+    max-width:1100px; margin:0 auto;
+    display:flex; align-items:center; justify-content:space-between;
+    padding:14px 20px;
+  }
+  .brand{display:flex; align-items:center; gap:10px;}
+  .brand img{
+    width:38px; height:38px; border-radius:50%; object-fit:cover;
+    border:2px solid var(--flame);
+  }
+  .brand .name{font-size:16px; font-weight:700;}
+  .brand .name span{color:var(--flame-soft);}
+
+  .nav-links{display:flex; gap:18px; font-size:13px; color:var(--muted);}
+  .nav-links a:hover{color:var(--text);}
+
+  .menu-btn{
+    background:none; border:1px solid var(--line); color:var(--text);
+    border-radius:10px; padding:8px 10px; cursor:pointer; font-size:18px;
+    display:none;
+  }
+
+  @media (max-width:680px){
+    .nav-links{display:none;}
+    .menu-btn{display:inline-flex;}
+  }
+
+  /* ===== SIDE MENU ===== */
+  #sideMenu{
+    position:fixed; top:0; right:0; height:100%; width:260px;
+    background:var(--panel); border-left:1px solid var(--line);
+    transform:translateX(100%); transition:transform 0.3s ease;
+    z-index:200; padding:20px; display:flex; flex-direction:column; gap:6px;
+  }
+  #sideMenu.active{transform:translateX(0);}
+  #sideMenu a, #sideMenu button.linklike{
+    display:block; padding:12px 10px; border-radius:10px;
+    color:var(--text); font-size:14px; background:none; border:none;
+    text-align:left; width:100%; cursor:pointer;
+  }
+  #sideMenu a:hover, #sideMenu button.linklike:hover{background:var(--bg-soft); color:var(--flame-soft);}
+  #menuOverlay{
+    position:fixed; inset:0; background:rgba(0,0,0,0.6);
+    z-index:150; opacity:0; pointer-events:none; transition:opacity 0.3s ease;
+  }
+  #menuOverlay.active{opacity:1; pointer-events:auto;}
+
+  /* ===== HERO ===== */
+  .hero{
+    max-width:1100px; margin:0 auto; padding:40px 20px 30px;
+    text-align:center;
+  }
+  .hero-photo{
+    width:140px; height:140px; object-fit:cover;
+    border-radius:50%;
+    border:2px solid var(--flame);
+    box-shadow:0 0 30px rgba(224,16,42,0.5);
+    margin-bottom:14px;
+  }
+  .hero-tagline{
+    color:var(--flame-soft); font-size:13px; font-weight:700;
+    letter-spacing:0.15em; margin-bottom:14px;
+  }
+  .hero .eyebrow{
+    color:var(--cyan); font-size:12px; font-weight:700;
+    letter-spacing:0.2em; text-transform:uppercase; margin-bottom:12px;
+  }
+  .hero h1{
+    font-size:clamp(28px,6vw,46px); line-height:1.1;
+    background:linear-gradient(135deg, var(--text), var(--flame-soft));
+    -webkit-background-clip:text; background-clip:text; color:transparent;
+  }
+  .hero p{color:var(--muted); margin-top:14px; font-size:15px;}
+  .hero-stats{
+    display:flex; gap:28px; justify-content:center; margin-top:26px; flex-wrap:wrap;
+  }
+  .stat{text-align:center;}
+  .stat b{display:block; font-size:22px; color:var(--gold); font-family:'Rajdhani';}
+  .stat span{font-size:12px; color:var(--muted);}
+
+  /* ===== SECTIONS ===== */
+  section.block{max-width:1100px; margin:0 auto; padding:30px 20px;}
+  .block-head{margin-bottom:18px; text-align:center;}
+  .block-head h2{font-size:24px;}
+  .block-head p{color:var(--muted); font-size:13px; margin-top:6px;}
+
+  .grid{
+    display:grid; gap:14px;
+    grid-template-columns:repeat(auto-fill, minmax(180px,1fr));
+  }
+
+  .pack{
+    background:var(--panel); border:1px solid var(--line);
+    border-radius:16px; padding:18px; text-align:center;
+    transition:transform 0.2s ease, border-color 0.2s ease;
+    position:relative; overflow:hidden;
+  }
+    .pack:hover{transform:translateY(-4px); border-color:var(--flame);}
+  .pack .amount{font-family:'Rajdhani'; font-size:20px; font-weight:700; color:var(--gold);}
+  .pack .bonus{font-size:11px; color:var(--cyan); margin-top:2px; min-height:14px;}
+  .pack .price{font-size:14px; color:var(--muted); margin:10px 0 12px;}
+  .pack .price b{color:var(--text); font-size:16px;}
+
+  .pack-btn{
+    width:100%; background:var(--flame); color:#fff;
+    border:none; border-radius:10px; padding:10px; font-weight:700;
+    font-size:13px; cursor:pointer; transition:filter 0.15s ease;
+  }
+  .pack-btn:hover{filter:brightness(1.1);}
+  .pack-btn.selected{background:var(--green); color:#062012;}
+
+  /* ===== ACCOUNTS ===== */
+  .acc-grid{
+    display:grid; gap:18px;
+    grid-template-columns:repeat(auto-fill, minmax(240px,1fr));
+  }
+  .acc-card{
+    background:var(--panel); border:1px solid var(--line);
+    border-radius:16px; overflow:hidden;
+    transition:transform 0.2s ease, border-color 0.2s ease;
+  }
+  .acc-card:hover{transform:translateY(-4px); border-color:var(--cyan);}
+  .acc-card img{width:100%; height:170px; object-fit:cover; display:block;}
+  .acc-body{padding:14px;}
+  .acc-price{font-family:'Rajdhani'; font-size:19px; color:var(--gold); font-weight:700;}
+  .acc-details{
+    list-style:none; margin:10px 0; padding:0;
+    font-size:12.5px; color:var(--muted); display:flex; flex-direction:column; gap:4px;
+  }
+  .acc-details li b{color:var(--text);}
+  .badge-sold{
+    display:inline-block; background:rgba(255,77,46,0.15); color:var(--flame-soft);
+    font-size:11px; font-weight:700; padding:4px 10px; border-radius:999px; margin-bottom:8px;
+  }
+  .acc-card.sold{opacity:0.55;}
+  .acc-card.sold .pack-btn{background:var(--line); color:var(--muted); cursor:not-allowed;}
+
+  /* ===== ORDER FORM ===== */
+  .order-panel{
+    background:linear-gradient(180deg, var(--panel), var(--bg-soft));
+    border:1px solid var(--line); border-radius:20px; padding:24px;
+    max-width:560px; margin:0 auto;
+  }
+  .field{margin-bottom:14px;}
+  .field label{display:block; font-size:12px; color:var(--muted); margin-bottom:6px; font-weight:600;}
+  .field input, .field select{
+    width:100%; padding:12px 14px; border-radius:10px;
+    background:var(--bg-soft); border:1px solid var(--line);
+    color:var(--text); font-size:14px;
+  }
+  .field input:focus, .field select:focus{
+    outline:none; border-color:var(--cyan);
+  }
+  .field input[readonly]{color:var(--gold); font-weight:600;}
+
+  .pay-options{display:flex; gap:10px; flex-wrap:wrap;}
+  .pay-chip{
+    flex:1; min-width:100px; text-align:center;
+    border:1px solid var(--line); border-radius:10px;
+    padding:10px; font-size:13px; cursor:pointer; color:var(--muted);
+    transition:0.15s ease;
+  }
+  .pay-chip.active{border-color:var(--green); color:var(--green); background:rgba(46,213,115,0.08);}
+
+  .pay-info{
+    margin-top:10px; font-size:12.5px; color:var(--muted);
+    background:var(--bg-soft); border:1px solid var(--line);
+    border-radius:10px; padding:10px 12px; display:none;
+  }
+  .pay-info.visible{display:block;}
+  .pay-info b{color:var(--text);}
+
+  .upload{
+    border:1.5px dashed var(--line); border-radius:10px;
+    padding:18px; text-align:center; cursor:pointer; font-size:13px; color:var(--muted);
+    transition:border-color 0.15s ease;
+  }
+  .upload:hover{border-color:var(--cyan);}
+  .upload.has-file{border-color:var(--green); color:var(--green);}
+  .upload input{display:none;}
+
+  .submit-btn{
+    width:100%; margin-top:6px; background:var(--flame); color:#fff;
+    border:none; border-radius:12px; padding:14px; font-size:14px; font-weight:700;
+    cursor:pointer; transition:filter 0.15s ease;
+  }
+  .submit-btn:hover{filter:brightness(1.1);}
+
+  .confirm-box{
+    display:none; margin-top:16px; background:rgba(46,213,115,0.1);
+    border:1px solid var(--green); border-radius:12px; padding:16px;
+    font-size:13px; color:#CFF7DC; line-height:1.6;
+  }
+  .confirm-box.visible{display:block; animation:riseIn 0.4s ease;}
+
+  /* ===== PAYMENT INFO SECTION ===== */
+  .pay-block{
+    background:var(--panel); border:1px solid var(--line); border-radius:16px;
+    padding:20px; max-width:560px; margin:0 auto; text-align:center;
+  }
+  .pay-block .num{
+    font-family:'Rajdhani'; font-size:22px; color:var(--gold); margin:10px 0;
+    letter-spacing:0.05em;
+  }
+  .copy-btn{
+    background:var(--bg-soft); border:1px solid var(--line); color:var(--text);
+    border-radius:8px; padding:8px 14px; font-size:12px; cursor:pointer;
+  }
+  .copy-btn:hover{border-color:var(--cyan);}
+
+  /* ===== FOOTER ===== */
+  footer{
+    border-top:1px solid var(--line); margin-top:40px;
+    padding:24px 20px; text-align:center; color:var(--muted); font-size:12.5px;
+  }
+  footer a{color:var(--cyan);}
+
+  /* modal */
+  #infoModal{
+    position:fixed; inset:0; background:rgba(0,0,0,0.7); z-index:300;
+    display:none; align-items:center; justify-content:center; padding:20px;
+  }
+  #infoModal.visible{display:flex;}
+  #infoModal .modal-card{
+    background:var(--panel); border:1px solid var(--line); border-radius:16px;
+    padding:22px; max-width:400px; white-space:pre-line; font-size:13.5px;
+    color:var(--muted); line-height:1.7; max-height:80vh; overflow-y:auto;
+  }
+  #infoModal h3{color:var(--text); margin-bottom:10px;}
+  #infoModal .close-modal{
+    margin-top:14px; width:100%; background:var(--line); color:var(--text);
+    border:none; border-radius:10px; padding:10px; cursor:pointer;
+  }
+
+  .toast{
+    position:fixed; bottom:20px; left:50%; transform:translateX(-50%) translateY(20px);
+    background:var(--panel); border:1px solid var(--line); color:var(--text);
+    padding:12px 18px; border-radius:10px; font-size:13px; z-index:400;
+    opacity:0; transition:0.3s ease; pointer-events:none;
+  }
+  .toast.show{opacity:1; transform:translateX(-50%) translateY(0);}
+</style>
+</head>
+<body>
+
+<!-- INTRO -->
+<div id="intro">
+  <div class="intro-card">
+    <img class="intro-avatar" src="https://i.ibb.co/8D75HXkv/Screenshot-2026-06-10-16-53-26-75-50ef9f5a0f3fc24b6f0ffc8843167fe4.jpg" alt="Romero">
+    <div class="eyebrow">Bienvenue</div>
+    <h2>Merci de faire confiance à mon site 💎</h2>
+    <p>Je suis Romero, influenceur haïtien. Ce site te permet d'acheter des diamants et des comptes Free Fire en toute simplicité.</p>
+
+    <div class="intro-actions">
+      <a href="https://www.tiktok.com/@soyromero01" target="_blank" class="btn btn-tiktok">🎵 Suivre sur TikTok</a>
+      <button class="btn btn-whatsapp" onclick="shareWhatsapp()">📲 Partager le lien</button>
+    </div>
+
+    <div class="intro-steps">
+      <h3>Comment commander</h3>
+      <ol>
+        <li>Choisis un pack de diamants ou un compte</li>
+        <li>Indique le pseudo et l'UID de ton compte Free Fire</li>
+        <li>Paye via NatCash ou MonCash au numéro indiqué</li>
+        <li>Ajoute la capture d'écran de paiement</li>
+        <li>Clique sur "Envoyer la commande"</li>
+        <li>« Les diamants sont générés automatiquement et les informations du compte sont envoyées après la vérification du paiement. » </li>
+      </ol>
+    </div>
+
+    <button class="skip" onclick="closeIntro()">Passer l'intro →</button>
+  </div>
+</div>
+
+<!-- SIDE MENU -->
+<div id="menuOverlay" onclick="toggleMenu()"></div>
+<nav id="sideMenu">
+  <a href="#packs">💎 Packs Diamants</a>
+  <a href="#comptes">🎮 Comptes Free Fire</a>
+  <a href="#commande">📩 Commande</a>
+  <a href="#paiement">💳 Paiement</a>
+  <button class="linklike" onclick="showAbout()">ℹ️ À propos</button>
+  <button class="linklike" onclick="showService()">🛡️ Confidentialité</button>
+  <a href="mailto:romerochefbratva@gmail.com">✉️ Contacter le support</a>
+        </nav>
+        <!-- HEADER -->
+<header>
+  <div class="nav">
+    <div class="brand">
+      <img src="https://i.ibb.co/8D75HXkv/Screenshot-2026-06-10-16-53-26-75-50ef9f5a0f3fc24b6f0ffc8843167fe4.jpg" alt="Romero">
+      <div class="name">SOY <span>ROMERO</span></div>
+    </div>
+    <div class="nav-links">
+      <a href="#packs">Diamants</a>
+      <a href="#comptes">Comptes</a>
+      <a href="#commande">Commande</a>
+      <a href="#paiement">Paiement</a>
+    </div>
+    <button class="menu-btn" onclick="toggleMenu()">☰</button>
+  </div>
+</header>
+
+<!-- HERO -->
+<section class="hero">
+  <img class="hero-photo" src="https://i.ibb.co/8D75HXkv/Screenshot-2026-06-10-16-53-26-75-50ef9f5a0f3fc24b6f0ffc8843167fe4.jpg" alt="Romero">
+  <div class="hero-tagline">RAPIDE&nbsp;•&nbsp;SÉCURISÉ&nbsp;•&nbsp;100%&nbsp;HAÏTIEN</div>
+  <h1>Diamants & comptes Free Fire au meilleur prix</h1>
+  <p>Recharge tes diamants ou récupère un compte déjà stylé, paiement via NatCash / MonCash.</p>
+  <div class="hero-stats">
+    <div class="stat"><b>400K+</b><span>Followers TikTok</span></div>
+    <div class="stat"><b>13</b><span>Packs disponibles</span></div>
+    <div class="stat"><b>24/7</b><span>Support actif</span></div>
+  </div>
+</section>
+
+<!-- PACKS -->
+<section class="block" id="packs">
+  <div class="block-head">
+    <h2>💎 Packs de diamants</h2>
+    <p>Choisis ton pack, le prix s'affiche en HTG</p>
+  </div>
+  <div class="grid" id="packGrid"></div>
+</section>
+
+<!-- ABONNEMENTS -->
+<section class="block" id="abos">
+  <div class="block-head">
+    <h2>🔥 Abonnements</h2>
+    <p>Avantages exclusifs sur le jeu</p>
+  </div>
+  <div class="grid" id="aboGrid"></div>
+</section>
+
+<!-- COMPTES -->
+<section class="block" id="comptes">
+  <div class="block-head">
+    <h2>🎮 Comptes Free Fire</h2>
+    <p>Toutes les infos sont visibles avant achat</p>
+  </div>
+  <div class="acc-grid" id="accGrid"></div>
+</section>
+
+<!-- COMMANDE -->
+<section class="block" id="commande">
+  <div class="block-head">
+    <h2>📩 Passer commande</h2>
+    <p>Remplis le formulaire après avoir choisi ton pack ou compte</p>
+  </div>
+
+  <div class="order-panel">
+    <div class="field">
+      <label>Plan sélectionné</label>
+      <input id="plan" placeholder="Aucun pack choisi encore" readonly>
+    </div>
+    <div class="field">
+      <label>Pseudo du compte Free Fire</label>
+      <input id="account" placeholder="Ex: RomeroFan123">
+    </div>
+    <div class="field">
+      <label>UID Free Fire</label>
+      <input id="uid" placeholder="Ex: 123456789">
+    </div>
+
+    <div class="field">
+      <label>Moyen de paiement</label>
+      <div class="pay-options">
+        <div class="pay-chip" data-pay="NatCash" onclick="choosePay('NatCash')">NatCash</div>
+        <div class="pay-chip" data-pay="MonCash" onclick="choosePay('MonCash')">MonCash</div>
+      </div>
+      <div id="payInfo" class="pay-info"></div>
+    </div>
+
+    <div class="field">
+      <label>Preuve de paiement (capture d'écran)</label>
+      <label class="upload" id="uploadBox">
+        📎 Cliquer pour ajouter la photo
+        <input type="file" id="proof" accept="image/*" onchange="onFile()">
+      </label>
+    </div>
+
+    <button class="submit-btn" onclick="sendOrder()">✔ Envoyer la commande</button>
+    <button class="btn btn-whatsapp" style="width:100%; margin-top:10px;" onclick="sendOrderToWhatsapp()">📲 Envoyer sur WhatsApp</button>
+
+    <div class="confirm-box" id="confirmBox"></div>
+  </div>
+</section>
+
+<!-- PAIEMENT -->
+<section class="block" id="paiement">
+  <div class="block-head">
+    <h2>💳 Moyens de paiement</h2>
+    <p>Finalise toujours ta commande avec une preuve de paiement</p>
+  </div>
+  <div class="pay-block">
+    <div>NatCash</div>
+    <div class="num" id="natNum">42819564<button class=
+    <div>Le Paiement via Moncash n'est pas encore disponible </div>
+    <p style="color:var(--muted); font-size:12.5px; margin-top:14px;">Nom du compte : <b style="color:var(--text)">pas de nom (42819564)</b></p>
+    <p style="color:var(--muted); font-size:12.5px;">Un souci avec ta commande ? Écris à <a href="mailto:romerochefbratva@gmail.com">romerochefbratva@gmail.com</a></p>
+  </div>
+</section>
+
+<footer>
+  © 2026 Soy Romero · Site non affilié à Garena / Free Fire ·
+  <a href="mailto:romerochefbratva@gmail.com">Support</a>
+</footer>
+
+<!-- INFO MODAL -->
+<div id="infoModal">
+  <div class="modal-card">
+    <h3 id="modalTitle"></h3>
+    <div id="modalBody"></div>
+    <button class="close-modal" onclick="closeModal()">Fermer</button>
+  </div>
+</div>
+
+<div class="toast" id="toast"></div>
+
+<script>
+/* ===================== DATA ===================== */
+const packs = [
+  {amount:"310 💎", bonus:"", price:325},
+  {amount:"450 💎", bonus:"", price:455},
+  {amount:"572 💎", bonus:"", price:610},
+  {amount:"680 💎", bonus:"", price:700},
+  {amount:"880 💎", bonus:"", price:955},
+  {amount:"1060 💎", bonus:"+100 bonus", price:1155},
+  {amount:"1320 💎", bonus:"+100 bonus", price:1125},
+  {amount:"1580 💎", bonus:"+100 bonus", price:1700},
+  {amount:"1890 💎", bonus:"+100 bonus", price:1920},
+  {amount:"2000 💎", bonus:"+400 bonus", price:2600},
+  {amount:"3000 💎", bonus:"+500 bonus", price:3700},
+  {amount:"4000 💎", bonus:"+800 bonus", price:5155},
+  {amount:"5000 💎", bonus:"+1100 bonus", price:6900},
+  {amount:"8000 💎", bonus:"+1300 bonus", price:8900},
+];
+
+const abos = [
+  {amount:"Abonnement Semaine", bonus:"", price:225},
+  {amount:"Abonnement Mois", bonus:"", price:1000},
+  {amount:"Abonnement VIP", bonus:"", price:1100},
+  {amount:"Panel Anti-ban ", bonus:"", price:2000},
+];
+
+const accounts = [
+  {img:"https://i.ibb.co/3YmFn8Rv/IMG-20260121-WA0074-1.jpg", price:16000, level:85, skins:" skins légendaires, AWM Gold", extra:"Aucun ban, niveau max passe", sold:false},
+  {img:"https://i.ibb.co/WWz2JKWD/WA-1781115514904.jpg", price:10000, level:77, skins:" skins épiques, animal de compagnie évolué", extra:"Compte veteran", sold:false},
+  {img:"https://i.ibb.co/3YNDR1tX/WA-1781115509608.jpg", price:9000, level:63, skins:" skins rares, spécial", extra:"Bon pour débuter ", sold:false},
+  {img:"https://i.ibb.co/GvhkRCXJ/IMG-20260615-WA0052.jpg", price:1000, level:65, skins:"Skins de base", extra:"Idéal compte secondaire", sold:false},
+  {img:"https://i.ibb.co/HpxRZsnt/WA-1781115278362.jpg", price:6000, level:63, skins:" skins épiques", extra:"Compte stable, aucun signalement", sold:false},
+  {img:"https://i.ibb.co/Dfb50RGw/WA-1781115507441.jpg", price:5500, level:70, skins:" skins légendaires", extra:"Inventaire complet inclus", sold:false},
+   {img:"https://i.ibb.co/YF054RS4/IMG-20260206-WA0017.jpg", price:2500, level:72, skins:" skins légendaires", extra:"avec un abonnement semaine", sold:false},
+  {img:"https://i.ibb.co/hFzP4vSD/IMG-20260211-WA0193.jpg", price:15000, level:69, skins:" skins légendaires, dance pack complet", extra:"Compte vérifié, lié email", sold:false},
+  {img:"https://i.ibb.co/Sw049h1z/IMG-20260207-WA0169-1.jpg", price:0, level:0, skins:"", extra:"", sold:true},
+  
+];
+
+/* ===================== RENDER ===================== */
+function renderPacks(targetId, list){
+  const grid = document.getElementById(targetId);
+  grid.innerHTML = list.map((p,i) => `
+    <div class="pack">
+      <div class="amount">${p.amount}</div>
+      <div class="bonus">${p.bonus}</div>
+      <div class="price">${p.price} <b>HTG</b></div>
+      <button class="pack-btn" onclick="selectPack(this, '${p.amount}${p.bonus ? ' '+p.bonus : ''} — ${p.price} HTG')">Choisir</button>
+    </div>
+  `).join("");
+}
+
+function renderAccounts(){
+  const grid = document.getElementById("accGrid");
+  grid.innerHTML = accounts.map((a) => {
+    if(a.sold){
+      return `
+      <div class="acc-card sold">
+        <img src="${a.img}" alt="Compte Free Fire">
+        <div class="acc-body">
+          <span class="badge-sold">Vendu</span>
+          <div class="acc-price">Compte vendu</div>
+          <button class="pack-btn" disabled>Indisponible</button>
+        </div>
+      </div>`;
+    }
+    return `
+      <div class="acc-card">
+        <img src="${a.img}" alt="Compte Free Fire">
+        <div class="acc-body">
+          <div class="acc-price">${a.price} HTG</div>
+          <ul class="acc-details">
+            <li><b>Niveau :</b> ${a.level}</li>
+            <li><b>Skins :</b> ${a.skins}</li>
+            <li><b>Détails :</b> ${a.extra}</li>
+          </ul>
+          <button class="pack-btn" onclick="selectPack(this, 'Compte Free Fire niveau ${a.level} — ${a.price} HTG')">Choisir ce compte</button>
+        </div>
+      </div>`;
+  }).join("");
+}
+
+renderPacks("packGrid", packs);
+renderPacks("aboGrid", abos);
+renderAccounts();
+
+/* ===================== INTERACTIONS ===================== */
+function selectPack(btn, label){
+  document.querySelectorAll(".pack-btn.selected").forEach(b => {
+    if(b.disabled) return;
+    b.classList.remove("selected");
+    b.innerText = b.closest(".acc-card") ? "Choisir ce compte" : "Choisir";
+  });
+  btn.classList.add("selected");
+  btn.innerText = "✓ Choisi";
+  document.getElementById("plan").value = label;
+  showToast("Pack sélectionné — descends remplir le formulaire 👇");
+  document.getElementById("commande").scrollIntoView({behavior:"smooth", block:"start"});
+}
+
+function choosePay(method){
+  document.querySelectorAll(".pay-chip").forEach(c => c.classList.remove("active"));
+  document.querySelector(`[data-pay="${method}"]`).classList.add("active");
+  const info = document.getElementById("payInfo");
+  info.classList.add("visible");
+  if(method === "NatCash"){
+    info.innerHTML = `Envoie le montant via <b>NatCash</b> au numéro <b>509 42819564</b> (pas de nom (42819564)).`;
+  } else {
+    info.innerHTML = `Envoie le montant via <b>MonCash</b> au numéro <b>509 42819564</b> (pas de nom (42819564)).`;
+  }
+  window._selectedPay = method;
+}
+
+function onFile(){
+  const input = document.getElementById("proof");
+  const box = document.getElementById("uploadBox");
+  if(input.files.length > 0){
+    box.classList.add("has-file");
+    box.innerHTML = "✅ " + input.files[0].name;
+    const inp = document.createElement("input");
+    inp.type = "file"; inp.id = "proof"; inp.accept = "image/*"; inp.style.display = "none";
+    inp.onchange = onFile;
+    box.appendChild(inp);
+  }
+}
+
+function sendOrder(){
+  const plan = document.getElementById("plan").value;
+  const account = document.getElementById("account").value.trim();
+  const uid = document.getElementById("uid").value.trim();
+  const pay = window._selectedPay;
+  const proof = document.getElementById("proof").files.length;
+
+  if(!plan){ showToast("Choisis d'abord un pack ou un compte"); return; }
+  if(!account || !uid){ showToast("Remplis le pseudo et l'UID"); return; }
+  if(!pay){ showToast("Choisis un moyen de paiement"); return; }
+  if(!proof){ showToast("Ajoute la preuve de paiement"); return; }
+
+  const box = document.getElementById("confirmBox");
+  box.innerHTML = `
+    ✅ <b>Commande enregistrée !</b><br><br>
+    Plan : <b>${plan}</b><br>
+    Compte : <b>${account}</b> (UID ${uid})<br>
+    Paiement : <b>${pay}</b><br><br>
+    Romero va vérifier ta preuve de paiement et te contacter rapidement.
+    Clique sur "Envoyer sur WhatsApp" pour accélérer le traitement.
+  `;
+  box.classList.add("visible");
+  box.scrollIntoView({behavior:"smooth", block:"center"});
+
+  const waMsg = encodeURIComponent(
+    `🔥 SOY ROMERO — Nouvelle commande\n\n` +
+    `Plan : ${plan}\n` +
+    `Pseudo Free Fire : ${account}\n` +
+    `UID : ${uid}\n` +
+    `Paiement : ${pay}\n\n` +
+    `📸 Preuve de paiement envoyée en pièce jointe.`
+  );
+  window._waLink = "https://wa.me/?text=+13127096347" + waMsg;
+}
+
+function sendOrderToWhatsapp(){
+  if(window._waLink){
+    window.location.href = window._waLink;
+  } else {
+    showToast("il faut choisir une vraie preuve de Paiement");
+  }
+}
+
+/* MENU */
+function toggleMenu(){
+  document.getElementById("sideMenu").classList.toggle("active");
+  document.getElementById("menuOverlay").classList.toggle("active");
+}
+
+/* INTRO */
+function closeIntro(){
+  document.getElementById("intro").style.display = "none";
+}
+
+function shareWhatsapp(){
+  const message = encodeURIComponent(
+    "Va voir le site de Romero pour acheter des diamants et comptes Free Fire à bas prix 🔥💎\nhttps://example.com"
+  );
+  window.location.href = "https://wa.me/?text=" + message;
+}
+
+/* MODAL INFO */
+function showAbout(){
+  document.getElementById("modalTitle").innerText = "À propos";
+  document.getElementById("modalBody").innerText =
+`Romero est un influenceur haïtien actif sur Free Fire.
+Ce site lui permet de vendre des diamants et des comptes à prix bas pour ses fans.
+Interface rapide, pensée pour mobile, mise à jour régulièrement.
+Merci pour ta confiance.`;
+  document.getElementById("infoModal").classList.add("visible");
+  toggleMenu();
+}
+
+function showService(){
+  document.getElementById("modalTitle").innerText = "Confidentialité";
+  document.getElementById("modalBody").innerText =
+`Tes informations (pseudo, UID, preuve de paiement) servent uniquement à traiter ta commande.
+Aucune donnée n'est revendue ou partagée.
+Pour toute question : romerochefbratva@gmail.com`;
+  document.getElementById("infoModal").classList.add("visible");
+  toggleMenu();
+}
+
+function closeModal(){
+  document.getElementById("infoModal").classList.remove("visible");
+}
+
+/* COPY */
+function copyNum(id){
+  const text = document.getElementById(id).innerText;
+  navigator.clipboard.writeText(text).then(() => showToast("Numéro copié ✅"));
+}
+
+/* TOAST */
+function showToast(msg){
+  const t = document.getElementById("toast");
+  t.innerText = msg;
+  t.classList.add("show");
+  setTimeout(() => t.classList.remove("show"), 2400);
+}
+</script>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Rajdhani:wght@600;700&display=swap" rel="stylesheet">
+
+</body>
+  </html>
